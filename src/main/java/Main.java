@@ -11,5 +11,9 @@ public class Main {
         Student savedStudent = studentService.addNewStudent(newStudent);
 
         System.out.println("Student saved: " + savedStudent);
+
+        Student unsaved = studentService.getStudentById("10");
+
+        System.out.println(unsaved);
     }
 }
